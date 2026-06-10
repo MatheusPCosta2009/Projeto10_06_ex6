@@ -9,10 +9,22 @@
 <body>
     <h1>Página de processamento</h1>
     <?php
-        $comprimento = $_POST["comprimento"];
-        $largura = $_POST["largura"];
-        $area = $largura * $comprimento;
-        echo "Area do terreno: ".$area."m";
+        $nome = $_POST["nome"];
+        $frequencia = $_POST["frequencia"];
+        $nota1 = $_POST["nota1"];
+        $nota2 = $_POST["nota2"];
+        $media = ($nota1 + $nota2) / 2;
+        if($media > 5){
+            if($frequencia >= 75){
+                echo "Aprovado!!!";
+            }
+            else{
+                echo "Reprova por Frequência";
+            }
+        }
+        else{
+            echo '<span style="color: red;">Reprova por nota</span';
+        }
     ?>
 </body>
 </html>
