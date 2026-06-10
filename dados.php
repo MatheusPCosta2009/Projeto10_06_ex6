@@ -9,15 +9,10 @@
 <body>
     <h1>Página de processamento</h1>
     <?php
-        $ano = $_POST["ano"];
-        $checagem1 = $ano % 4;
-        $checagem2 = $ano & 100;
-        if($checagem1 == 0 && $checagem2 != 0){
-            echo "Ano bissexto";
-        }
-        else{
-            echo "Ano comum";
-        }
+        $comprimento = $_POST["comprimento"];
+        $largura = $_POST["largura"];
+        $area = $largura * $comprimento;
+        echo "Area do terreno: ".$area."m";
     ?>
 </body>
 </html>
