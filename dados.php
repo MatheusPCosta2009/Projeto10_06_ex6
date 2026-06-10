@@ -9,40 +9,90 @@
 <body>
     <h1>Página de processamento</h1>
     <?php
-        $texto = $_POST["texto"];
-        $areaTexto = $_POST["areadetexto"];
-        $checkBox = $_POST["checkbox"];
-        $radio = $_POST["radio"];
-        $selectOption = $_POST["selecao"];
-        switch($radio){
-            case "op1":
-                $opRadio = "Opção 1";
+        $estado = $_POST["estado"];
+        switch($estado){
+            case "Acre":
+                echo "Rio Branco";
                 break;
-            case "op2":
-                $opRadio = "Opção 2";
+            case "Alagoas":
+                echo "Maceió";
                 break;
-            case "op3":
-                $opRadio = "Opção 3";
+            case "Amapá":
+                echo "Macapá";
+                break;
+            case "Amazonas":
+                echo "Manaus";
+                break;
+            case "Bahia":
+                echo "Salvador";
+                break;
+            case "Ceará":
+                echo "Fortaleza";
+                break;
+            case "Distrito Federal":
+                echo "Brasília";
+                break;
+            case "Goiás":
+                echo "Goiânia";
+                break;
+            case "Espírito Santo":
+                echo "Vitória";
+                break;
+            case "Maranhão":
+                echo "São Luís";
+                break;
+            case "Mato Grosso":
+                echo "Cuiabá";
+                break;
+            case "Mato Grosso do Sul":
+                echo "Campo Grande";
+                break;
+            case "Minas Gerais":
+                echo "Belo Horizonte";
+                break;
+            case "Pará":
+                echo "Belém";
+                break;
+            case "Paraíba":
+                echo "João Pessoa";
+                break;
+            case "Paraná":
+                echo "Curitiba";
+                break;
+            case "Pernambuco":
+                echo "Recife";
+                break;
+            case "Piauí":
+                echo "Teresina";
+                break;
+            case "Rio de Janeiro":
+                echo "Rio de Janeiro";
+                break;
+            case "Rio Grande do Norte":
+                echo "Natal";
+                break;
+            case "Rio Grande do Sul":
+                echo "Porto Alegre";
+                break;
+            case "Rondônia":
+                echo "Porto Velho";
+                break;
+            case "Roraima":
+                echo "Boa Vista";
+                break;
+            case "Santa Catarina":
+                echo "Florianópolis";
+                break;
+            case "São Paulo":
+                echo "São Paulo";
+                break;
+            case "Sergipe":
+                echo "Aracaju";
+                break;
+            case "Tocantins":
+                echo "Palmas";
                 break;
         }
-        switch($selectOption){
-            case "op1":
-                $opSelect = "Opção 1";
-                break;
-            case "op2":
-                $opSelect = "Opção 2";
-                break;
-            case "op3":
-                $opSelect = "Opção 3";
-                break;
-        }
-        echo "Texto: ".$texto."\n";
-        echo "Area de texto: ".$areaTexto."\n";
-        foreach($checkBox as $valor){
-            echo "Opção: ".htmlspecialchars($valor)."\n";
-        }
-        echo "Radio: ".$opRadio."\n";
-        echo "Select option: ".$opSelect."\n";
     ?>
 </body>
 </html>
