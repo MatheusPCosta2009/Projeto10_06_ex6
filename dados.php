@@ -14,6 +14,10 @@
         $nota1 = $_POST["nota1"];
         $nota2 = $_POST["nota2"];
         $media = ($nota1 + $nota2) / 2;
+        echo "Nome: ".$nome."\n";
+        echo "Frequência: ".$frequencia."\n";
+        echo "Nota 1: ".$nota1."\n";
+        echo "Nota 2: ".$nota2."\n";
         if($media > 5){
             if($frequencia >= 75){
                 echo "Aprovado!!!";
